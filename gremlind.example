@@ -1,0 +1,25 @@
+#==============================#
+# Gremlin Daemon Configuration #
+#==============================#
+
+# This file is used to expose configuration to the Gremlin daemon process (`gremlind`)
+
+# When the Gremlin daemon starts, it will automatically issue a `gremlin init` command to
+# register this machine with the Gremlin Control Plane. This requires the following team and
+# secret values to be set. If these values are not set, the Gremlin daemon will continue to
+# start up. However `gremlin init` will need to be run separately before attacks can be run.
+#GREMLIN_TEAM_ID=
+#GREMLIN_TEAM_SECRET=
+
+# Supply extra options to `gremlin init` via this variable
+# Example: `GREMLIN_INIT_OPTS=--tag service=api` (see https://help.gremlin.com/configuration)
+#GREMLIN_INIT_OPTS=
+
+# To use Gremlin with an http proxy, provide the proxy information. Note that all of Gremlin's
+# communication with the Gremlin Control Plane is via outbound HTTPs, therefore `https_proxy`
+# (not `http_proxy` should be used in most cases)
+# Example: https_proxy=https://proxyuser:proxypass@10.0.0.3:3218
+#https_proxy=
+
+# Any additional Gremlin Daemon variables (such as GREMLIN_IDENTIFIER) may be defined here
+# (see https://help.gremlin.com/configuration)
