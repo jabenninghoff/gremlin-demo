@@ -5,6 +5,8 @@ Vagrant configuration for simple demo of Gremlin - https://www.gremlin.com
 
 copy `gremlind.example` to `gremlind`, add your Gremlin Team ID and Team Secret and run `vagrant up`!
 
+(optional) if `./html/index.html` exists, the entire contents of `./html/` will be copied to the VM.
+
 ## Demo
 
 CPU demo
